@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors -->
+    <color name="yellow_orange">#FFB533</color>
+    <color name="sunshade">#F7982D</color>
+    <color name="mine">#adadad</color>
+    <color name="ash_gray">#999999</color>
+    <color name="light_gray">#CCCCCC</color>
+    <color name="ghost">#C8CAD5</color>
+    <color name="mercury_gray">#EEEEEE</color>
+    <color name="concrete_gray">#F2F2F2</color>
+    <color name="blue">#147FFB</color>
+    <color name="bored_blue">#6599FF</color>
+    <color name="dark_blue">#4E79CF</color>
+    <color name="raspberry">#FF4081</color>
+    <color name="turquoise">#40DAE3</color>
+    <color name="yellow">#FFC50A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Colors with their usage defined -->
+    <color name="top_action_bar">@color/yellow_orange</color>
+    <color name="event_header">@color/yellow_orange</color>
+    <color name="event_title">@color/mine</color>
+    <color name="event_sub_title">@color/ash_gray</color>
+    <color name="image_placeholder">@color/ghost</color>
+    <color name="separator">@color/mercury_gray</color>
+    <color name="background">@color/concrete_gray</color>
+    <color name="pane">@color/white</color>
+
+    <!-- Category selection button colors -->
+    <color name="selected_button_color">@color/yellow_orange</color>
+    <color name="selected_button_border_color">@color/yellow_orange</color>
+    <color name="selected_text_color">@color/white</color>
+    <color name="unselected_button_color">@color/white</color>
+    <color name="unselected_button_border_color">@color/yellow_orange</color>
+    <color name="unselected_text_color">@color/yellow_orange</color>
+
+    <!-- Availability selection color -->
+    <color name="availability_selection_color">@color/yellow_orange</color>
+    <color name="availability_text_color">@color/mine</color>
+
+</resources>
