@@ -19,7 +19,8 @@ public class CurrentCarsCacheSchema {
 
         public static final String COLUMN_TIMESTAMP = "timestamp";
 
-        public static final String COLUMN_USERID = "userid";    
+        public static final String COLUMN_USERID = "userid";  
+        
     }
 
     public static final String BIGINT_TYPE = " BIGINT";

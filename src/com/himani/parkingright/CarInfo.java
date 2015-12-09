@@ -7,8 +7,15 @@ public class CarInfo {
 	private String model;
 	private long timestamp;
 	private long userid;
+	private boolean found;
 	
 	
+	public boolean isFound() {
+		return found;
+	}
+	public void setFound(boolean found) {
+		this.found = found;
+	}
 	public long getUserid() {
 		return userid;
 	}

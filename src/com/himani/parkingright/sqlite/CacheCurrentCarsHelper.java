@@ -1,6 +1,7 @@
 package com.himani.parkingright.sqlite;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import android.content.ContentValues;
@@ -25,9 +26,9 @@ public class CacheCurrentCarsHelper {
      * @param context
      * @return account
      */
-    public static List<CarInfo> getCahedList(Context context) {
+    public static HashSet<CarInfo> getCahedList(Context context) {
 
-    	List<CarInfo> carInfo = new ArrayList<CarInfo>();
+    	HashSet<CarInfo> carInfo = new HashSet<CarInfo>();
         CacheDbHelper dbHelper = new CacheDbHelper(context);
         SQLiteDatabase dbReader = dbHelper.getReadableDatabase();
         if (dbReader == null) {
@@ -79,17 +80,10 @@ public class CacheCurrentCarsHelper {
 
     private static ContentValues getAllContentValuesCarInfo(CarInfo c) {
         ContentValues values = new ContentValues();
-        values.put(AccountEntry.COLUMN_ACCESS_TOKEN, account.getAccessToken());
-        values.put(AccountEntry.COLUMN_ACCOUNT_TYPE, account.getAccountType());
-        values.put(AccountEntry.COLUMN_FULL_NAME, account.getFullName());
-        values.put(AccountEntry.COLUMN_USERNAME, account.getUsername());
-        return values;
-    }
-
-    private static ContentValues getAllContentValuesLocation(Location location) {
-        ContentValues values = new ContentValues();
-        values.put(LocationEntry.COLUMN_CURRENT_LAT, location.getLatitude());
-        values.put(LocationEntry.COLUMN_CURRENT_LNG, location.getLongitude());
+        values.put(CarEntry.COLUMN_PLATE, c.getPlate());
+        values.put(CarEntry.COLUMN_MAKE, c.getMake());
+        values.put(CarEntry.COLUMN_MODEL, c.getModel());
+        values.put(CarEntry.COLUMN_TIMESTAMP, c.getTimestamp());
         return values;
     }
 
